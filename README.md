@@ -1,6 +1,6 @@
 ## Spring Boot Camel
 
-Copying or moving files using technology such as Apache Camel
+Copying or moving files using technology such as Apache Camel.
 
 ### Testing a file
 To start, run on the command line, using the full path to the file, namely:
