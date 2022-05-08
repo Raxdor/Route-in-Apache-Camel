@@ -15,6 +15,9 @@ import lombok.extern.slf4j.Slf4j;
 
 //Route
 public class MyRoute extends RouteBuilder {
+	
+	public static String from;
+	public static String to;
 
 	// Overriding of method configure(), which defines the essence of the
 	// application, when extending RouteBuilder
@@ -30,15 +33,15 @@ public class MyRoute extends RouteBuilder {
 		switch (a) {
 		case 1: {
 			System.setProperty("java.awt.headless", "false");
-			String from = openFile("FROM:"); // folder, from which we will execute the function
-			String to = openFile("TO:"); // folder, which сontains results of executed function
+			from = openFile("FROM:"); // folder, from which we will execute the function
+			to = openFile("TO:"); // folder, which сontains results of executed function
 			copyAllFiles(from, to);
 		}
 			break;
 		case 2: {
 			System.setProperty("java.awt.headless", "false");
-			String from = openFile("FROM:"); // folder, from which we will execute the function
-			String to = openFile("TO:"); // folder, which сontains results of executed function
+			from = openFile("FROM:"); // folder, from which we will execute the function
+			to = openFile("TO:"); // folder, which сontains results of executed function
 			moveAllFiles(from, to);
 		}
 			break;
